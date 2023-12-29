@@ -4,7 +4,7 @@ import { addImageData, deleteImageData, getImage, getImageData, postAllImageData
 const router =  Router()
 
 router
-  .get('/',getImageData)
+  .get('/getimages',getImageData)
   .get('/getimage/:id',getImage)   
   .post('/addimage',postAllImageData)
   .post('/addimagedata',addImageData)

@@ -1,7 +1,7 @@
 import express from "express"
 import cors from "cors"
 import router from "./routes/route.js";
-import { connect } from "mongoose";
+
 import dbConnect from "./database/db.js";
 import { config } from "dotenv";
 
