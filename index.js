@@ -25,7 +25,7 @@ app.get('/',(req,res)=>{
 dbConnect().then(()=>{
   try{
     app.listen(port,()=>{
-      console.log("app running on 8080");
+      console.log("app running on ",port);
     })
   } catch(err){
     console.log("cann't connect to the server")

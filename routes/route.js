@@ -4,11 +4,11 @@ import { addImageData, deleteImageData, getImage, getImageData, postAllImageData
 const router =  Router()
 
 router
-  .get('/getimages',getImageData)
+  .get('/',getImageData)
   .get('/getimage/:id',getImage)   
   .post('/addimage',postAllImageData)
   .post('/addimagedata',addImageData)
   .patch('/updateimage/:id',updateImageData)
   .delete('/deleteimage/:id', deleteImageData)
 
-export default router
+export default router 
